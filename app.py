@@ -7,6 +7,7 @@ DATABASE = "fighters.db"
 
 
 #functions
+#Code to print all the aircraft in raw form
 def print_all_aircraft():
     '''print all the aircraft nicely'''
     db = sqlite3.connect(DATABASE)
@@ -21,6 +22,7 @@ def print_all_aircraft():
     #loop finished here
     db.close()
 
+# Code to print all aircraft sorted by speed in descending order
 def print_all_aircraft_by_speed():
     '''print all aircraft sorted by speed'''
     db = sqlite3.connect(DATABASE)
@@ -35,6 +37,7 @@ def print_all_aircraft_by_speed():
     #loop finished here
     db.close()
 
+# Code to print all aircraft sorted by max_g in descending order
 def print_all_aircraft_by_max_g():
     '''print all the aircraft sorted by max_g'''
     db = sqlite3.connect(DATABASE)
@@ -49,6 +52,7 @@ def print_all_aircraft_by_max_g():
     #loop finished here
     db.close()
 
+# Code to print all aircraft sorted by climbrate in descending order
 def print_all_aircraft_by_climb():
     '''print all aircraft sorted by climb speed'''
     db = sqlite3.connect(DATABASE)
@@ -63,6 +67,7 @@ def print_all_aircraft_by_climb():
     #loop finished here
     db.close()
 
+# Code to print all aircraft sorted by range in descending order
 def print_all_aircraft_by_range():
     '''print all the aircraft sorted by range'''
     db = sqlite3.connect(DATABASE)
@@ -77,6 +82,7 @@ def print_all_aircraft_by_range():
     #loop finished here
     db.close()
 
+# Code to print all aircraft sorted by payload in descending order
 def print_all_aircraft_by_payload():
     '''print all the aircraft sorted by payload'''
     db = sqlite3.connect(DATABASE)
@@ -90,10 +96,6 @@ def print_all_aircraft_by_payload():
         print(f"{fighter[1]:<30}{fighter[2]:<8}{fighter[3]:<6}{fighter[4]:<6}{fighter[5]:<6}{fighter[6]:<6}")
     #loop finished here
     db.close()
-
-
-
-
 
 
 #main code
